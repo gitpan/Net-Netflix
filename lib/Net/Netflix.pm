@@ -2,6 +2,8 @@ package Net::Netflix;
 
 use WWW::Mechanize;
 
+our $VERSION = 0.03;
+
 sub new {
   my $ref = shift;
   my $class = ref( $ref ) || $ref;
