@@ -1,0 +1,7 @@
+Revision history for Perl extension Net::Netflix
+
+0.02	Mar 19 2005
+	- Added lots of documentation and made a proper installation package.
+
+alpha	May  8 2004
+	- Created the original module
