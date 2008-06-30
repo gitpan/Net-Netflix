@@ -1,5 +1,12 @@
 Revision history for Perl extension Net::Netflix
 
+0.04    June 21 2008
+    - Module mostly rewritten by Christie Robertson and Colin Meyer
+    - Fixed screen scraping to match Netflix's current html
+    - Added ratings setting method
+    - Added queue retrieval and setting methods
+    - Added netflix_mover script to do everything most people want with this module
+
 0.03	Mar 19 2005
 	- Fixed a problem with the distribution
 

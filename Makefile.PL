@@ -2,9 +2,13 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     'NAME'		   => 'Net::Netflix',
+    'LICENSE'      => 'perl',
     'VERSION_FROM' => 'lib/Net/Netflix.pm',
     'PREREQ_PM'    => {
-		'WWW::Mechanize'      => 0.59
+		'WWW::Mechanize' => 0.59,
+        'YAML'           => 0.66,
+        'Net::SSL'       => 2.84,
 	}, 
-    ($] >= 5.005 ? ( AUTHOR => 'John Resig <jeresig@gmail.com>') : ()),
+    'EXE_FILES'    => [ 'netflix_mover' ],
+    ($] >= 5.006 ? ( AUTHOR => 'Christie Robertson and Colin Meyer <pants@helvella.org>') : ()),
 );

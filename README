@@ -1,28 +1,38 @@
-Net/Netflix version 0.03
+Net::Netflix version 0.04
 ==================================
 
-This module is designed to pull down every movie that you've rated within your 
-Netflix account. Utilizes the wonderful WWW::Mechanize module to work its magic.
+Most people will just want to use the included netflix_mover program
+to save or transfer ratings and queue data from Netflix profiles or
+accounts.
+
+This module is designed to pull down every movie that you've rated
+within your Netflix account, as well as your queue. Once retrieved, the
+information can be transferred to another Netflix account, if you
+desire. The module utilizes the wonderful WWW::Mechanize module to work
+its magic.
 
 See the POD documentation for more info.
 
-More information can also be found here:
-    http://ejohn.org/projects/netflix/
-
 INSTALLATION
 
-This module requires WWW::Mechanize.
+This module requires:
+ * WWW::Mechanize
+ * Net::SSL
 
-Once all dependencies have been resolved, "Net::Mechanize" installs 
+The netflix_mover program requires:
+ * YAML
+
+Once all dependencies have been resolved, "Net::Netflix" installs 
 with the typical sequence
 
     perl Makefile.PL
     make
-    make test
+    make test # optional, requires a test Netflix account or profile
     make install
 
 COPYRIGHT AND LICENCE
 
+Copyright (C) 2008 Colin Meyer and Christie Robertson
 Copyright (C) 2005 John Resig
 
 This library is free software; you can redistribute it and/or modify
