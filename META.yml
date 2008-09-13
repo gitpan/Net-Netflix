@@ -1,16 +1,14 @@
 --- #YAML:1.0
 name:                Net-Netflix
-version:             0.04
-abstract:            ~
-license:             perl
+version:             0.05
+abstract:            Please see updated module at WWW::Netflix.
+license:             ~
 author:              
     - Christie Robertson and Colin Meyer <pants@helvella.org>
-generated_by:        ExtUtils::MakeMaker version 6.42
+generated_by:        ExtUtils::MakeMaker version 6.44
 distribution_type:   module
 requires:     
-    Net::SSL:                      2.84
-    WWW::Mechanize:                0.59
-    YAML:                          0.66
+    Test::More:                    0
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.3.html
     version: 1.3

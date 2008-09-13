@@ -1,6 +1,9 @@
 Revision history for Perl extension Net::Netflix
 
-0.04    June 21 2008
+0.05    Sep 13 2008
+    - Moved module to WWW::Netflix. Please see new namespace for all future updates.
+    
+0.04    Jun 21 2008
     - Module mostly rewritten by Christie Robertson and Colin Meyer
     - Fixed screen scraping to match Netflix's current html
     - Added ratings setting method

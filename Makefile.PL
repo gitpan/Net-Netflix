@@ -1,14 +1,16 @@
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    'NAME'		   => 'Net::Netflix',
-    'LICENSE'      => 'perl',
-    'VERSION_FROM' => 'lib/Net/Netflix.pm',
-    'PREREQ_PM'    => {
-		'WWW::Mechanize' => 0.59,
-        'YAML'           => 0.66,
-        'Net::SSL'       => 2.84,
-	}, 
-    'EXE_FILES'    => [ 'netflix_mover' ],
-    ($] >= 5.006 ? ( AUTHOR => 'Christie Robertson and Colin Meyer <pants@helvella.org>') : ()),
+    NAME                => 'Net::Netflix',
+    AUTHOR              => 'Christie Robertson and Colin Meyer <pants@helvella.org>',
+    VERSION_FROM        => 'lib/Net/Netflix.pm',
+    ABSTRACT_FROM       => 'lib/Net/Netflix.pm',
+    PL_FILES            => {},
+    PREREQ_PM => {
+        'Test::More' => 0,
+    },
+    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    clean               => { FILES => 'Net-Netflix-*' },
 );
